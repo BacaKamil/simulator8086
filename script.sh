@@ -1,2 +1,1 @@
 uname -a 
-uname -a 
