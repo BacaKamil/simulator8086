@@ -12,22 +12,16 @@ namespace simulator8086
 {
     public partial class XchgScreen : Form
     {
-        MainScreen main = new MainScreen();
-
         public XchgScreen()
         {
             InitializeComponent();
         }
 
-        private void XchgScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            MainScreen mainScreen = new MainScreen();
             this.Visible = false;
-            main.Show();
+            mainScreen.Show();
         }
     }
 }
