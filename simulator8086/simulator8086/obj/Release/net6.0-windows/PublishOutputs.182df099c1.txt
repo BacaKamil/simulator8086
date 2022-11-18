@@ -1,0 +1,5 @@
+C:\Users\kamil\Desktop\simulator8086.exe
+C:\Users\kamil\Desktop\simulator8086.dll
+C:\Users\kamil\Desktop\simulator8086.deps.json
+C:\Users\kamil\Desktop\simulator8086.runtimeconfig.json
+C:\Users\kamil\Desktop\simulator8086.pdb
