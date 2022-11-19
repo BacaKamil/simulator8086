@@ -23,5 +23,10 @@ namespace simulator8086
             this.Visible = false;
             mainScreen.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

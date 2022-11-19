@@ -29,23 +29,39 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(507, 305);
+            this.button1.Location = new System.Drawing.Point(640, 370);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 81);
+            this.button1.Size = new System.Drawing.Size(120, 50);
             this.button1.TabIndex = 0;
             this.button1.Text = "BACK";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(804, 54);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "XCHG";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // XchgScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(804, 451);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -61,5 +77,6 @@
         #endregion
 
         private Button button1;
+        private Label label1;
     }
 }
