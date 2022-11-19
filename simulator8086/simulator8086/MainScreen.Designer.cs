@@ -35,6 +35,8 @@
             // 
             // MOVbutt
             // 
+            this.MOVbutt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MOVbutt.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MOVbutt.Location = new System.Drawing.Point(175, 185);
             this.MOVbutt.Name = "MOVbutt";
             this.MOVbutt.Size = new System.Drawing.Size(160, 80);
@@ -45,6 +47,8 @@
             // 
             // XCHGbutt
             // 
+            this.XCHGbutt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.XCHGbutt.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.XCHGbutt.Location = new System.Drawing.Point(470, 185);
             this.XCHGbutt.Name = "XCHGbutt";
             this.XCHGbutt.Size = new System.Drawing.Size(160, 80);
