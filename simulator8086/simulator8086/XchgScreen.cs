@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace simulator8086
 {
     public partial class XchgScreen : Form
@@ -27,6 +28,11 @@ namespace simulator8086
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cansel_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

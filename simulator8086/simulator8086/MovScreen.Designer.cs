@@ -52,8 +52,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.reset_button = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.cansel_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // BackButt
@@ -69,21 +72,21 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Location = new System.Drawing.Point(0, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(804, 54);
+            this.label1.Size = new System.Drawing.Size(800, 55);
             this.label1.TabIndex = 2;
             this.label1.Text = "MOV";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(270, 66);
+            this.label2.Location = new System.Drawing.Point(257, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 28);
             this.label2.TabIndex = 11;
@@ -93,7 +96,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(119, 65);
+            this.label3.Location = new System.Drawing.Point(106, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 28);
             this.label3.TabIndex = 12;
@@ -104,7 +107,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(486, 144);
+            this.label4.Location = new System.Drawing.Point(473, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 28);
             this.label4.TabIndex = 13;
@@ -114,7 +117,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(486, 189);
+            this.label5.Location = new System.Drawing.Point(473, 215);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 28);
             this.label5.TabIndex = 14;
@@ -124,7 +127,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(486, 234);
+            this.label6.Location = new System.Drawing.Point(473, 260);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 28);
             this.label6.TabIndex = 15;
@@ -134,7 +137,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(486, 279);
+            this.label7.Location = new System.Drawing.Point(473, 305);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 28);
             this.label7.TabIndex = 16;
@@ -144,7 +147,7 @@
             // 
             this.bx_value.AutoSize = true;
             this.bx_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bx_value.Location = new System.Drawing.Point(546, 189);
+            this.bx_value.Location = new System.Drawing.Point(533, 215);
             this.bx_value.Name = "bx_value";
             this.bx_value.Size = new System.Drawing.Size(17, 28);
             this.bx_value.TabIndex = 18;
@@ -154,7 +157,7 @@
             // 
             this.cx_value.AutoSize = true;
             this.cx_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cx_value.Location = new System.Drawing.Point(546, 234);
+            this.cx_value.Location = new System.Drawing.Point(533, 260);
             this.cx_value.Name = "cx_value";
             this.cx_value.Size = new System.Drawing.Size(17, 28);
             this.cx_value.TabIndex = 19;
@@ -164,7 +167,7 @@
             // 
             this.dx_value.AutoSize = true;
             this.dx_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dx_value.Location = new System.Drawing.Point(546, 279);
+            this.dx_value.Location = new System.Drawing.Point(533, 305);
             this.dx_value.Name = "dx_value";
             this.dx_value.Size = new System.Drawing.Size(17, 28);
             this.dx_value.TabIndex = 20;
@@ -174,7 +177,7 @@
             // 
             this.ax_value.AutoSize = true;
             this.ax_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ax_value.Location = new System.Drawing.Point(546, 144);
+            this.ax_value.Location = new System.Drawing.Point(533, 170);
             this.ax_value.Name = "ax_value";
             this.ax_value.Size = new System.Drawing.Size(17, 28);
             this.ax_value.TabIndex = 21;
@@ -182,7 +185,7 @@
             // 
             // exec_button
             // 
-            this.exec_button.Location = new System.Drawing.Point(234, 335);
+            this.exec_button.Location = new System.Drawing.Point(221, 361);
             this.exec_button.Name = "exec_button";
             this.exec_button.Size = new System.Drawing.Size(120, 50);
             this.exec_button.TabIndex = 22;
@@ -300,7 +303,7 @@
             this.panel1.Controls.Add(this.bx1);
             this.panel1.Controls.Add(this.cx1);
             this.panel1.Controls.Add(this.dx1);
-            this.panel1.Location = new System.Drawing.Point(88, 96);
+            this.panel1.Location = new System.Drawing.Point(75, 122);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(130, 220);
             this.panel1.TabIndex = 31;
@@ -312,14 +315,14 @@
             this.panel2.Controls.Add(this.bx2);
             this.panel2.Controls.Add(this.dx2);
             this.panel2.Controls.Add(this.cx2);
-            this.panel2.Location = new System.Drawing.Point(224, 96);
+            this.panel2.Location = new System.Drawing.Point(211, 122);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(130, 220);
             this.panel2.TabIndex = 32;
             // 
             // reset_button
             // 
-            this.reset_button.Location = new System.Drawing.Point(88, 335);
+            this.reset_button.Location = new System.Drawing.Point(75, 361);
             this.reset_button.Name = "reset_button";
             this.reset_button.Size = new System.Drawing.Size(120, 50);
             this.reset_button.TabIndex = 33;
@@ -327,11 +330,40 @@
             this.reset_button.UseVisualStyleBackColor = true;
             this.reset_button.Click += new System.EventHandler(this.reset_button_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Controls.Add(this.cansel_button);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(800, 30);
+            this.panel3.TabIndex = 34;
+            // 
+            // cansel_button
+            // 
+            this.cansel_button.BackColor = System.Drawing.Color.Red;
+            this.cansel_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cansel_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cansel_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cansel_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cansel_button.ForeColor = System.Drawing.Color.White;
+            this.cansel_button.Location = new System.Drawing.Point(766, 3);
+            this.cansel_button.Margin = new System.Windows.Forms.Padding(0);
+            this.cansel_button.Name = "cansel_button";
+            this.cansel_button.Size = new System.Drawing.Size(30, 25);
+            this.cansel_button.TabIndex = 35;
+            this.cansel_button.Text = "X";
+            this.cansel_button.UseVisualStyleBackColor = false;
+            this.cansel_button.Click += new System.EventHandler(this.cansel_button_Click);
+            // 
             // MovScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 451);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.reset_button);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -348,6 +380,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BackButt);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "MovScreen";
             this.ShowIcon = false;
@@ -357,6 +390,7 @@
             this.Load += new System.EventHandler(this.MovScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +422,7 @@
         private Panel panel2;
         private Button reset_button;
         private Label ax_value;
+        private Panel panel3;
+        private Button cansel_button;
     }
 }

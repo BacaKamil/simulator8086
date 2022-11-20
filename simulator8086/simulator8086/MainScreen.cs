@@ -2,18 +2,14 @@ namespace simulator8086
 {
     public partial class MainScreen : Form
     {
-        
-        
-
         public MainScreen()
         {
-            InitializeComponent();
+            InitializeComponent();     
         }
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void MOVbutt_Click(object sender, EventArgs e)
@@ -29,6 +25,11 @@ namespace simulator8086
 
             this.Visible=false;
             xchgScreen.Show();
+        }
+
+        private void cansel_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

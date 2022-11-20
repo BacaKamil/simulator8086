@@ -12,6 +12,8 @@ namespace simulator8086
 {
     public partial class MovScreen : Form
     {
+        MainScreen mainScreen = new MainScreen();
+
         public int AX = 1;
         public int BX = 2;
         public int CX = 3;
@@ -27,12 +29,11 @@ namespace simulator8086
 
         private void MovScreen_Load(object sender, EventArgs e)
         {
-
+         
         }
 
         private void BackButt_Click(object sender, EventArgs e)
         {
-            MainScreen mainScreen = new MainScreen();
             this.Visible = false;
             mainScreen.Show();
         }
@@ -141,6 +142,16 @@ namespace simulator8086
             bx_value.Text = null;
             cx_value.Text = null;
             dx_value.Text = null;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cansel_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
