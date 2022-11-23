@@ -4,12 +4,7 @@ namespace simulator8086
     {
         public MainScreen()
         {
-            InitializeComponent();     
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
+            InitializeComponent();  
         }
 
         private void MOVbutt_Click(object sender, EventArgs e)
@@ -30,6 +25,16 @@ namespace simulator8086
         private void cansel_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void MainScreen_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MainScreen_Shown(object sender, EventArgs e)
+        {
+            
         }
     }
 }

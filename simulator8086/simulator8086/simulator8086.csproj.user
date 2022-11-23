@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>D:\simulator8086\simulator8086\simulator8086\simulator8086\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="messScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MovScreen.cs">
       <SubType>Form</SubType>
     </Compile>

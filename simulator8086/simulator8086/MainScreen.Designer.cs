@@ -116,7 +116,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulator 8086";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainScreen_Load);
+            this.Shown += new System.EventHandler(this.MainScreen_Shown);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
