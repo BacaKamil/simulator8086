@@ -8,19 +8,24 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "D:\\Users\\kamil.baca\\.nuget\\packages\\": {}
+    "C:\\Users\\kamil\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\kamil.baca\\Documents\\symulator8086\\project\\simulator8086\\simulator8086\\simulator8086\\simulator8086.csproj",
+      "projectUniqueName": "D:\\simulator8086\\simulator8086\\simulator8086\\simulator8086.csproj",
       "projectName": "simulator8086",
-      "projectPath": "D:\\Users\\kamil.baca\\Documents\\symulator8086\\project\\simulator8086\\simulator8086\\simulator8086\\simulator8086.csproj",
-      "packagesPath": "D:\\Users\\kamil.baca\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\kamil.baca\\Documents\\symulator8086\\project\\simulator8086\\simulator8086\\simulator8086\\obj\\",
+      "projectPath": "D:\\simulator8086\\simulator8086\\simulator8086\\simulator8086.csproj",
+      "packagesPath": "C:\\Users\\kamil\\.nuget\\packages\\",
+      "outputPath": "D:\\simulator8086\\simulator8086\\simulator8086\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "D:\\Users\\kamil.baca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kamil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

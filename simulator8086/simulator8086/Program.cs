@@ -5,7 +5,7 @@ namespace simulator8086
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new messScreen());
+            Application.Run(new MessScreen());
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dCs2B2OxgjdpKsc3AwPxM96W8tdglddzL1L8TmF1tLq/DTDyOyPSeQ7iE7xnNwOyWTyD3BRkA9FMvlYHsJbsIQ==",
+  "dgSpecHash": "J7jADC7P8Bm6bAOysLeTxCqo1Ga91d+0DLBk95WLcKhvJiXNFUCA5ZffdqjSY3DNtTvACHO0NtlE/hMnju5c9g==",
   "success": true,
-  "projectFilePath": "D:\\Users\\kamil.baca\\Documents\\symulator8086\\project\\simulator8086\\simulator8086\\simulator8086\\simulator8086.csproj",
+  "projectFilePath": "D:\\simulator8086\\simulator8086\\simulator8086\\simulator8086.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
