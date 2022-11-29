@@ -32,6 +32,30 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cansel_button = new System.Windows.Forms.Button();
+            this.reset_button = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ax2 = new System.Windows.Forms.RadioButton();
+            this.bx2 = new System.Windows.Forms.RadioButton();
+            this.dx2 = new System.Windows.Forms.RadioButton();
+            this.cx2 = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ax1 = new System.Windows.Forms.RadioButton();
+            this.bx1 = new System.Windows.Forms.RadioButton();
+            this.cx1 = new System.Windows.Forms.RadioButton();
+            this.dx1 = new System.Windows.Forms.RadioButton();
+            this.exec_button = new System.Windows.Forms.Button();
+            this.ax_value = new System.Windows.Forms.Label();
+            this.dx_value = new System.Windows.Forms.Label();
+            this.cx_value = new System.Windows.Forms.Label();
+            this.bx_value = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -55,11 +79,10 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "XCHG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
@@ -84,11 +107,271 @@
             this.cansel_button.UseVisualStyleBackColor = false;
             this.cansel_button.Click += new System.EventHandler(this.cansel_button_Click);
             // 
+            // reset_button
+            // 
+            this.reset_button.Location = new System.Drawing.Point(73, 361);
+            this.reset_button.Name = "reset_button";
+            this.reset_button.Size = new System.Drawing.Size(120, 50);
+            this.reset_button.TabIndex = 50;
+            this.reset_button.Text = "RESET";
+            this.reset_button.UseVisualStyleBackColor = true;
+            this.reset_button.Click += new System.EventHandler(this.reset_button_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.ax2);
+            this.panel2.Controls.Add(this.bx2);
+            this.panel2.Controls.Add(this.dx2);
+            this.panel2.Controls.Add(this.cx2);
+            this.panel2.Location = new System.Drawing.Point(209, 122);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(130, 220);
+            this.panel2.TabIndex = 49;
+            // 
+            // ax2
+            // 
+            this.ax2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ax2.Location = new System.Drawing.Point(20, 21);
+            this.ax2.Name = "ax2";
+            this.ax2.Size = new System.Drawing.Size(90, 40);
+            this.ax2.TabIndex = 27;
+            this.ax2.TabStop = true;
+            this.ax2.Text = "AX";
+            this.ax2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ax2.UseVisualStyleBackColor = true;
+            this.ax2.CheckedChanged += new System.EventHandler(this.ax2_CheckedChanged);
+            // 
+            // bx2
+            // 
+            this.bx2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bx2.Location = new System.Drawing.Point(20, 67);
+            this.bx2.Name = "bx2";
+            this.bx2.Size = new System.Drawing.Size(90, 40);
+            this.bx2.TabIndex = 28;
+            this.bx2.TabStop = true;
+            this.bx2.Text = "BX";
+            this.bx2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bx2.UseVisualStyleBackColor = true;
+            this.bx2.CheckedChanged += new System.EventHandler(this.bx2_CheckedChanged);
+            // 
+            // dx2
+            // 
+            this.dx2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.dx2.Location = new System.Drawing.Point(20, 159);
+            this.dx2.Name = "dx2";
+            this.dx2.Size = new System.Drawing.Size(90, 40);
+            this.dx2.TabIndex = 30;
+            this.dx2.TabStop = true;
+            this.dx2.Text = "DX";
+            this.dx2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dx2.UseVisualStyleBackColor = true;
+            this.dx2.CheckedChanged += new System.EventHandler(this.dx2_CheckedChanged);
+            // 
+            // cx2
+            // 
+            this.cx2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.cx2.Location = new System.Drawing.Point(20, 113);
+            this.cx2.Name = "cx2";
+            this.cx2.Size = new System.Drawing.Size(90, 40);
+            this.cx2.TabIndex = 29;
+            this.cx2.TabStop = true;
+            this.cx2.Text = "CX";
+            this.cx2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cx2.UseVisualStyleBackColor = true;
+            this.cx2.CheckedChanged += new System.EventHandler(this.cx2_CheckedChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.ax1);
+            this.panel1.Controls.Add(this.bx1);
+            this.panel1.Controls.Add(this.cx1);
+            this.panel1.Controls.Add(this.dx1);
+            this.panel1.Location = new System.Drawing.Point(73, 122);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(130, 220);
+            this.panel1.TabIndex = 48;
+            // 
+            // ax1
+            // 
+            this.ax1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ax1.Location = new System.Drawing.Point(20, 21);
+            this.ax1.Name = "ax1";
+            this.ax1.Size = new System.Drawing.Size(90, 40);
+            this.ax1.TabIndex = 23;
+            this.ax1.TabStop = true;
+            this.ax1.Text = "AX";
+            this.ax1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ax1.UseVisualStyleBackColor = true;
+            this.ax1.CheckedChanged += new System.EventHandler(this.ax1_CheckedChanged);
+            // 
+            // bx1
+            // 
+            this.bx1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bx1.Location = new System.Drawing.Point(20, 67);
+            this.bx1.Name = "bx1";
+            this.bx1.Size = new System.Drawing.Size(90, 40);
+            this.bx1.TabIndex = 24;
+            this.bx1.TabStop = true;
+            this.bx1.Text = "BX";
+            this.bx1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bx1.UseVisualStyleBackColor = true;
+            this.bx1.CheckedChanged += new System.EventHandler(this.bx1_CheckedChanged);
+            // 
+            // cx1
+            // 
+            this.cx1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.cx1.Location = new System.Drawing.Point(20, 113);
+            this.cx1.Name = "cx1";
+            this.cx1.Size = new System.Drawing.Size(90, 40);
+            this.cx1.TabIndex = 25;
+            this.cx1.TabStop = true;
+            this.cx1.Text = "CX";
+            this.cx1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cx1.UseVisualStyleBackColor = true;
+            this.cx1.CheckedChanged += new System.EventHandler(this.cx1_CheckedChanged);
+            // 
+            // dx1
+            // 
+            this.dx1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.dx1.Location = new System.Drawing.Point(20, 159);
+            this.dx1.Name = "dx1";
+            this.dx1.Size = new System.Drawing.Size(90, 40);
+            this.dx1.TabIndex = 26;
+            this.dx1.TabStop = true;
+            this.dx1.Text = "DX";
+            this.dx1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dx1.UseVisualStyleBackColor = true;
+            this.dx1.CheckedChanged += new System.EventHandler(this.dx1_CheckedChanged);
+            // 
+            // exec_button
+            // 
+            this.exec_button.Location = new System.Drawing.Point(219, 361);
+            this.exec_button.Name = "exec_button";
+            this.exec_button.Size = new System.Drawing.Size(120, 50);
+            this.exec_button.TabIndex = 47;
+            this.exec_button.Text = "EXECUTE";
+            this.exec_button.UseVisualStyleBackColor = true;
+            this.exec_button.Click += new System.EventHandler(this.exec_button_Click);
+            // 
+            // ax_value
+            // 
+            this.ax_value.AutoSize = true;
+            this.ax_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ax_value.Location = new System.Drawing.Point(531, 170);
+            this.ax_value.Name = "ax_value";
+            this.ax_value.Size = new System.Drawing.Size(17, 28);
+            this.ax_value.TabIndex = 46;
+            this.ax_value.Text = " ";
+            // 
+            // dx_value
+            // 
+            this.dx_value.AutoSize = true;
+            this.dx_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dx_value.Location = new System.Drawing.Point(531, 305);
+            this.dx_value.Name = "dx_value";
+            this.dx_value.Size = new System.Drawing.Size(17, 28);
+            this.dx_value.TabIndex = 45;
+            this.dx_value.Text = " ";
+            // 
+            // cx_value
+            // 
+            this.cx_value.AutoSize = true;
+            this.cx_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cx_value.Location = new System.Drawing.Point(531, 260);
+            this.cx_value.Name = "cx_value";
+            this.cx_value.Size = new System.Drawing.Size(17, 28);
+            this.cx_value.TabIndex = 44;
+            this.cx_value.Text = " ";
+            // 
+            // bx_value
+            // 
+            this.bx_value.AutoSize = true;
+            this.bx_value.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bx_value.Location = new System.Drawing.Point(531, 215);
+            this.bx_value.Name = "bx_value";
+            this.bx_value.Size = new System.Drawing.Size(17, 28);
+            this.bx_value.TabIndex = 43;
+            this.bx_value.Text = " ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(471, 305);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 28);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "DX =";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(471, 260);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 28);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "CX =";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(471, 215);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 28);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "BX =";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(471, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 28);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "AX =";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(106, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 28);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "FROM";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(255, 92);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 28);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "TO";
+            // 
             // XchgScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reset_button);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.exec_button);
+            this.Controls.Add(this.ax_value);
+            this.Controls.Add(this.dx_value);
+            this.Controls.Add(this.cx_value);
+            this.Controls.Add(this.bx_value);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cansel_button);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
@@ -100,7 +383,11 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulator 8086";
+            this.Load += new System.EventHandler(this.XchgScreen_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -110,5 +397,27 @@
         private Label label1;
         private Panel panel3;
         private Button cansel_button;
+        private Button reset_button;
+        private Panel panel2;
+        private RadioButton ax2;
+        private RadioButton bx2;
+        private RadioButton dx2;
+        private RadioButton cx2;
+        private Panel panel1;
+        private RadioButton ax1;
+        private RadioButton bx1;
+        private RadioButton cx1;
+        private RadioButton dx1;
+        private Button exec_button;
+        private Label ax_value;
+        private Label dx_value;
+        private Label cx_value;
+        private Label bx_value;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
     }
 }

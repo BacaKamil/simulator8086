@@ -80,7 +80,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "MOV";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -101,7 +100,6 @@
             this.label3.Size = new System.Drawing.Size(67, 28);
             this.label3.TabIndex = 12;
             this.label3.Text = "FROM";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -307,7 +305,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(130, 220);
             this.panel1.TabIndex = 31;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -332,7 +329,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel3.Controls.Add(this.cansel_button);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -387,7 +384,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simulator 8086";
-            this.Load += new System.EventHandler(this.MovScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

@@ -28,13 +28,25 @@ namespace simulator8086
             InitializeComponent();
         }
 
-        private void MovScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BackButt_Click(object sender, EventArgs e)
         {
+            ax1.Checked = false;
+            bx1.Checked = false;
+            cx1.Checked = false;
+            dx1.Checked = false;
+            ax2.Checked = false;
+            bx2.Checked = false;
+            cx2.Checked = false;
+            dx2.Checked = false;
+            AX = 1;
+            BX = 2;
+            CX = 3;
+            DX = 4;
+            ax_value.Text = null;
+            bx_value.Text = null;
+            cx_value.Text = null;
+            dx_value.Text = null;
+
             this.Visible = false;
             mainScreen.Show();
         }
@@ -115,16 +127,6 @@ namespace simulator8086
             to = DX;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void reset_button_Click(object sender, EventArgs e)
         {
             ax1.Checked = false;
@@ -144,12 +146,6 @@ namespace simulator8086
             cx_value.Text = null;
             dx_value.Text = null;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void cansel_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
